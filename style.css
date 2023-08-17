@@ -1,0 +1,251 @@
+body{
+  background: white;			/*cor base*/
+  color: black;                      
+}
+
+.dark-mode{
+  background: black;			/*cor no modo noturno*/
+  color: white;
+}
+
+.CheckBoxDark input[type="checkbox"] {
+display:none;							/*tirar a barra de checkbox*/
+justify-content: right;
+}
+
+.CheckBoxDark input + label {
+display: inline-block;					/*mudar o checkbox para uma imagem*/
+width: 35px;
+height: 35px;
+cursor: pointer;	
+background-image: url('imagens/moon.png');
+}
+
+.CheckBoxDark input[type="checkbox"]:checked + label {
+background-image: url('imagens/sun.png')		/*mudar imagem no checkbox quando ele for marcado*/
+}
+
+.container{ 			/*container barra inicial*/
+  display:flex;		
+align-items: center;
+align-content: space-between;
+justify-content: center;
+width :90%;
+margin : 0 auto;
+gap: 35vw;
+}
+
+.receitinhas {					/*Container das receitinhas*/
+
+display: flex;						
+flex-wrap: wrap;  
+align-content: center;
+justify-content: center;
+width: 90%;   
+margin: 0 auto;
+gap: 5vw;
+
+}
+
+.receitinhas img{
+  filter: blur(0px); /* adiciona o efeito de blur */
+  transition: filter 0.1s; /* adiciona uma transição suave */
+}
+
+.receitinhas img:hover {
+  filter: blur(5px); /* aumenta o blur quando o mouse estiver em cima */
+}
+
+#receita {			/*mudar design das boxes das receitas*/
+
+width:  35vw;
+height: 25vw;
+background-size: cover;
+border-radius: 15px;
+border: 3px solid black;
+padding: 5px ;
+  box-shadow: 0.8vw 0.7vw #888888;
+} 
+
+/*só tem confusão aqui para baixo*/
+
+.receita1{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita1 .texto-sobre1 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita1:hover .texto-sobre1 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+.receita2{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita2 .texto-sobre2 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita2:hover .texto-sobre2 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+.receita3{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita3 .texto-sobre3 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita3:hover .texto-sobre3 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+.receita4{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita4 .texto-sobre4 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita4:hover .texto-sobre4 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+.receita5{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita5 .texto-sobre5 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita5:hover .texto-sobre5 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+.receita6{
+  position: relative; /* para posicionar o texto sobre a imagem */
+}
+
+.receita6 .texto-sobre6 {
+  position: absolute; /* posiciona o texto no meio da imagem */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden; /* esconde o texto por padrão */
+  color: white;
+  -webkit-text-stroke-width: 0.3vw; /* largura da borda */
+  -webkit-text-stroke-color: black; /* cor da borda */
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.receita6:hover .texto-sobre6 {
+  visibility: visible; /* mostra o texto quando o mouse estiver em cima da imagem */
+}
+
+
+/*tudo aqui em baixo é responsividade*/
+
+@media only screen and (max-width: 666px) {
+body {
+  font-size: 16px; /* increase font size for small screens */
+}
+.CheckBoxDark input + label {
+  width: 35px; /* decrease size of checkbox image */
+  height: 35px;
+}
+.container {
+  gap: 70px; /* decrease gap for small screens */
+}
+}
+
+@media only screen and (min-width: 667px) and (max-width: 736px) {
+body {
+  font-size: 16px; /* increase font size for small screens */
+}
+.CheckBoxDark input + label {
+  width: 35px; /* decrease size of checkbox image */
+  height: 35px;
+}
+.container {
+  gap: 200px; /* decrease gap for small screens */
+} 
+}
+
+@media only screen and (min-width: 737px) and (max-width: 900px) {
+body {
+  font-size: 16px; /* increase font size for small screens */
+}
+.CheckBoxDark input + label {
+  width: 35px; /* decrease size of checkbox image */
+  height: 35px;
+}
+.container {
+  gap: 250px; /* decrease gap for small screens */
+}
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+body {
+  font-size: 16px; /* increase font size for small screens */
+}
+.CheckBoxDark input + label {
+  width: 35px; /* decrease size of checkbox image */
+  height: 35px;
+}
+.container {
+  gap: 300px; /* decrease gap for small screens */
+}  
+}
